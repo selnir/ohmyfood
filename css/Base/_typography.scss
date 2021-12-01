@@ -1,0 +1,29 @@
+h1 {
+  font-size: $font-h1;
+}
+h2 {
+  font-size: $font-h2;
+}
+h3 {
+  font-size: $font-h3;
+}
+p {
+  font-size: $font-p;
+}
+.rest-apercu__desc {
+  i {
+    font-size: 21px;
+  }
+}
+footer {
+  color: white;
+
+  nav {
+    font-weight: bold;
+  }
+}
+footer {
+  h2 {
+    font-family: $font-titre;
+  }
+}

@@ -1,0 +1,54 @@
+.bout-val {
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  height: 50px;
+  width: 220px;
+  border-style: none;
+  border-radius: 25px;
+  box-shadow: 1px 1px 12px #555;
+
+  h3 {
+    color: white;
+  }
+}
+
+.bout-fonct {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  border-radius: 30px;
+  border-style: none;
+  height: 73px;
+  background-color: $section-background;
+  width: 100%;
+  box-shadow: 1px 1px 12px #555;
+
+  i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 100%;
+  }
+  h3 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+.bout-fonct:hover {
+  background: rgba(147, 86, 220, 0.3);
+  i {
+    color: $primary-color;
+  }
+}
+.bout-menu {
+  border-radius: 25px;
+  border-style: none;
+  height: 73px;
+  background-color: white;
+  width: 100%;
+  box-shadow: 1px 1px 12px #555;
+}

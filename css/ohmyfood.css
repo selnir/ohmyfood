@@ -1,0 +1,332 @@
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 12px;
+}
+
+p {
+  font-size: 13px;
+}
+
+.rest-apercu__desc i {
+  font-size: 21px;
+}
+
+footer {
+  color: white;
+}
+footer nav {
+  font-weight: bold;
+}
+
+footer h2 {
+  font-family: "Shrikhand";
+}
+
+.bout-val {
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  height: 50px;
+  width: 220px;
+  border-style: none;
+  border-radius: 25px;
+  box-shadow: 1px 1px 12px #555;
+}
+.bout-val h3 {
+  color: white;
+}
+
+.bout-fonct {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  border-radius: 30px;
+  border-style: none;
+  height: 73px;
+  background-color: #f6f6f6;
+  width: 100%;
+  box-shadow: 1px 1px 12px #555;
+}
+.bout-fonct i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 100%;
+}
+.bout-fonct h3 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.bout-fonct:hover {
+  background: rgba(147, 86, 220, 0.3);
+}
+.bout-fonct:hover i {
+  color: #9356dc;
+}
+
+.bout-menu {
+  border-radius: 25px;
+  border-style: none;
+  height: 73px;
+  background-color: white;
+  width: 100%;
+  box-shadow: 1px 1px 12px #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+form h1 {
+  margin: 25px;
+  text-align: center;
+  width: 229px;
+}
+form p {
+  text-align: center;
+  width: 305px;
+  margin-bottom: 25px;
+}
+form input {
+  background-color: #eaeaea;
+  border-style: none;
+  font-weight: bold;
+  width: 40%;
+  margin-left: 10px;
+}
+form .explo-res__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  width: 100%;
+  height: 50px;
+  box-shadow: -1px 60px 3px -59px rgba(0, 0, 0, 0.43) inset;
+}
+form .explo-res__form i {
+  font-size: 16px;
+  color: #6a6a6a;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+}
+footer h2 {
+  margin: 25px;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 25px;
+}
+footer nav a {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+footer nav a i {
+  margin-right: 10px;
+}
+
+header {
+  width: 100%;
+}
+
+.picure_header {
+  border: solid;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: "roboto";
+  border-style: none;
+}
+body .logo {
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .restaurant {
+  background-color: #f6f6f6;
+  padding-top: 20px;
+}
+body .restaurant h1 {
+  margin-left: 20px;
+}
+body .restaurant .rest-apercu {
+  display: flex;
+  height: 250px;
+  flex-direction: column;
+  border-radius: 25px;
+  margin: 20px;
+  box-shadow: 1px 1px 12px #555;
+  background-color: white;
+}
+body .restaurant .rest-apercu__picture {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+body .restaurant .rest-apercu__picture .rest-apercu__sticker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #99e2d0;
+  color: #008766;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  left: 240px;
+  top: 10px;
+  font-weight: bold;
+}
+body .restaurant .rest-apercu__picture img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .restaurant .rest-apercu__desc {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+body .restaurant .rest-apercu__desc i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 25px;
+}
+body .restaurant .rest-apercu__desc .container-rest {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  justify-content: space-evenly;
+  margin-left: 15px;
+}
+
+.container-fonct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-fonct .fonct-appli {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.container-fonct .fonct-appli .fonct-appli__titre {
+  width: 100%;
+}
+
+.bout-fonct {
+  margin: 20px;
+}
+
+.container-fonct {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.fonct-appli__titre {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.menu-course {
+  padding: 20px;
+}
+
+.bout-menu {
+  margin-bottom: 20px;
+}
+
+.menu-course__titre {
+  margin-bottom: 20px;
+}
+
+.menu__titre {
+  margin-left: 20px;
+}
+
+main {
+  padding-top: 30px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.bout-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.bout-menu .bout-menu__course {
+  width: 80%;
+  border-style: solid;
+  height: 40%;
+}
+.bout-menu .bout-menu__ingredient {
+  width: 80%;
+  border-style: solid;
+  height: 40%;
+}
+.bout-menu .bout-menu__prix {
+  height: 100%;
+  width: 20%;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border-style: solid;
+}
+
+.bout-fonct__nbre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  font-size: 10px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  color: white;
+  background-color: #9356dc;
+  border-color: #9356dc;
+  position: relative;
+  right: 15px;
+}/*# sourceMappingURL=ohmyfood.css.map */
