@@ -63,16 +63,48 @@ body {
     }
     .rest-apercu__desc {
       display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       height: 30%;
       border-bottom-left-radius: 25px;
       border-bottom-right-radius: 25px;
-      i {
+      .heart {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom-right-radius: 25px;
+        height: 35%;
+        .heart-fill {
+          display: none;
+        }
       }
+      .heart:hover {
+        .heart-empty {
+          display: none;
+        }
+        .heart-fill {
+          display: block;
+          .fa-heart {
+            background-clip: text;
+            background: linear-gradient(to bottom right, #ff79da, #9356dc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+      // i::before {
+      //   content: attr(far fa-heart);
+      //   position: absolute;
+      //   bottom: 0;
+      //   left: 0;
+      //   color: linear-gradient(to bottom right, #ff79da, #9356dc);
+      //   overflow: hidden;
+      //   height: 0%;
+      //   transition: 1s;
+      // }
+      // i:hover::before {
+      //   height: 100%;
+      // }
       .container-rest {
         display: flex;
         flex-direction: column;

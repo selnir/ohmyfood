@@ -220,16 +220,33 @@ body .restaurant .rest-apercu__picture img {
 }
 body .restaurant .rest-apercu__desc {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 30%;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
-body .restaurant .rest-apercu__desc i {
+body .restaurant .rest-apercu__desc .heart {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom-right-radius: 25px;
+  height: 35%;
+}
+body .restaurant .rest-apercu__desc .heart .heart-fill {
+  display: none;
+}
+body .restaurant .rest-apercu__desc .heart:hover .heart-empty {
+  display: none;
+}
+body .restaurant .rest-apercu__desc .heart:hover .heart-fill {
+  display: block;
+}
+body .restaurant .rest-apercu__desc .heart:hover .heart-fill .fa-heart {
+  background-clip: text;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 body .restaurant .rest-apercu__desc .container-rest {
   display: flex;
