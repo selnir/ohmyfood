@@ -29,6 +29,15 @@ footer h2 {
   font-family: "Shrikhand";
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a[href^=mailto] {
+  margin-bottom: 50px;
+}
+
 .bout-val {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   height: 50px;
@@ -89,6 +98,7 @@ form {
   flex-direction: column;
   align-items: center;
   background-color: #f6f6f6;
+  padding-bottom: 55px;
 }
 form h1 {
   margin: 25px;
@@ -143,6 +153,9 @@ footer nav a {
 footer nav a i {
   margin-right: 10px;
 }
+footer nav a .email {
+  margin-bottom: 50px;
+}
 
 header {
   width: 100%;
@@ -170,9 +183,16 @@ body .logo {
   justify-content: center;
   align-items: center;
 }
+body .fonct-appli {
+  padding-bottom: 74px;
+  padding-top: 54px;
+  display: flex;
+  flex-direction: column;
+}
 body .restaurant {
   background-color: #f6f6f6;
-  padding-top: 20px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 body .restaurant h1 {
   margin-left: 20px;
@@ -304,28 +324,21 @@ body .restaurant .rest-apercu__desc .container-rest {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 33px;
 }
-.container-fonct .fonct-appli {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
-}
-.container-fonct .fonct-appli .fonct-appli__titre {
+
+.fonct-appli__titre {
   width: 100%;
+  margin-left: 20px;
 }
 
 .bout-fonct {
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .container-fonct {
   margin-left: 20px;
   margin-right: 20px;
-}
-
-.fonct-appli__titre {
-  margin-top: 20px;
-  margin-left: 20px;
 }
 
 .menu-course {
@@ -345,7 +358,6 @@ body .restaurant .rest-apercu__desc .container-rest {
 }
 
 main {
-  padding-top: 30px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }

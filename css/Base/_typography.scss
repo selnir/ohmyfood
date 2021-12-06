@@ -27,3 +27,10 @@ footer {
     font-family: $font-titre;
   }
 }
+a {
+  text-decoration: none;
+  color: white;
+}
+a[href^="mailto"] {
+  margin-bottom: 50px;
+}

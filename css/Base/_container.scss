@@ -13,10 +13,17 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .fonct-appli {
+    padding-bottom: 74px;
+    padding-top: 54px;
+    display: flex;
+    flex-direction: column;
+  }
 
   .restaurant {
     background-color: $section-background;
-    padding-top: 20px;
+    padding-top: 64px;
+    padding-bottom: 64px;
     h1 {
       margin-left: 20px;
     }
@@ -119,23 +126,6 @@ body {
           height: 100%;
         }
       }
-      // .heart-fill:hover {
-      //   height: 100%;
-      // }
-
-      // i::before {
-      //   content: attr(far fa-heart);
-      //   position: absolute;
-      //   bottom: 0;
-      //   left: 0;
-      //   color: linear-gradient(to bottom right, #ff79da, #9356dc);
-      //   overflow: hidden;
-      //   height: 0%;
-      //   transition: 1s;
-      // }
-      // i:hover::before {
-      //   height: 100%;
-      // }
       .container-rest {
         display: flex;
         flex-direction: column;
@@ -152,26 +142,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .fonct-appli {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-    .fonct-appli__titre {
-      width: 100%;
-    }
-  }
+  padding-top: 33px;
+}
+.fonct-appli__titre {
+  width: 100%;
+  margin-left: 20px;
 }
 
 .bout-fonct {
-  margin: 20px;
+  margin-bottom: 20px;
 }
 .container-fonct {
   margin-left: 20px;
   margin-right: 20px;
-}
-.fonct-appli__titre {
-  margin-top: 20px;
-  margin-left: 20px;
 }
 
 .menu-course {
@@ -189,7 +172,6 @@ body {
   margin-left: 20px;
 }
 main {
-  padding-top: 30px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
