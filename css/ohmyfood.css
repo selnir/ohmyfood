@@ -31,11 +31,13 @@ footer h2 {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 a[href^=mailto] {
   margin-bottom: 50px;
+  text-decoration: none;
+  color: white;
 }
 
 .bout-val {
@@ -149,6 +151,7 @@ footer nav a {
   display: flex;
   justify-content: start;
   margin-bottom: 10px;
+  color: white;
 }
 footer nav a i {
   margin-right: 10px;
@@ -265,6 +268,9 @@ body .restaurant .rest-apercu__desc .heart .heart-fill {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+body .restaurant .rest-apercu__desc .heart:hover {
+  cursor: pointer;
 }
 body .restaurant .rest-apercu__desc .heart:hover .heart-empty {
   display: none;
