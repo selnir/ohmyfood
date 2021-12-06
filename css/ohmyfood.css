@@ -44,7 +44,7 @@ a[href^=mailto] {
   width: 220px;
   border-style: none;
   border-radius: 25px;
-  box-shadow: 1px 1px 12px #555;
+  box-shadow: 0px 1px 5px gray;
 }
 .bout-val h3 {
   color: white;
@@ -60,7 +60,7 @@ a[href^=mailto] {
   height: 73px;
   background-color: #f6f6f6;
   width: 100%;
-  box-shadow: 1px 1px 12px #555;
+  box-shadow: 0px 1px 5px gray;
 }
 .bout-fonct i {
   display: flex;
@@ -205,6 +205,7 @@ body .restaurant .rest-apercu {
   margin: 20px;
   box-shadow: 1px 1px 12px #555;
   background-color: white;
+  box-shadow: 0px 1px 5px gray;
 }
 body .restaurant .rest-apercu__picture {
   position: relative;
