@@ -231,22 +231,65 @@ body .restaurant .rest-apercu__desc .heart {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35%;
+  height: 23px;
+  width: 25px;
+  position: relative;
+}
+body .restaurant .rest-apercu__desc .heart .heart-empty {
+  color: black;
 }
 body .restaurant .rest-apercu__desc .heart .heart-fill {
   display: none;
+  background-clip: text;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 body .restaurant .rest-apercu__desc .heart:hover .heart-empty {
   display: none;
 }
 body .restaurant .rest-apercu__desc .heart:hover .heart-fill {
   display: block;
+  position: absolute;
+  width: 24px;
+  -webkit-animation: progres 1s infinite linear;
+          animation: progres 1s infinite linear;
+  bottom: 0;
+  left: 0;
 }
-body .restaurant .rest-apercu__desc .heart:hover .heart-fill .fa-heart {
-  background-clip: text;
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@-webkit-keyframes progres {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 50%;
+  }
+  50% {
+    height: 75%;
+  }
+  75% {
+    height: 85%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes progres {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 50%;
+  }
+  50% {
+    height: 75%;
+  }
+  75% {
+    height: 85%;
+  }
+  100% {
+    height: 100%;
+  }
 }
 body .restaurant .rest-apercu__desc .container-rest {
   display: flex;

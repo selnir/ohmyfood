@@ -69,13 +69,24 @@ body {
       height: 30%;
       border-bottom-left-radius: 25px;
       border-bottom-right-radius: 25px;
+
       .heart {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 35%;
+        height: 23px;
+        width: 25px;
+        position: relative;
+
+        .heart-empty {
+          color: black;
+        }
         .heart-fill {
           display: none;
+          background-clip: text;
+          background: linear-gradient(to bottom right, #ff79da, #9356dc);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
       .heart:hover {
@@ -84,14 +95,34 @@ body {
         }
         .heart-fill {
           display: block;
-          .fa-heart {
-            background-clip: text;
-            background: linear-gradient(to bottom right, #ff79da, #9356dc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
+          position: absolute;
+          width: 24px;
+          animation: progres 1s infinite linear;
+          bottom: 0;
+          left: 0;
         }
       }
+      @keyframes progres {
+        0% {
+          height: 0%;
+        }
+        25% {
+          height: 50%;
+        }
+        50% {
+          height: 75%;
+        }
+        75% {
+          height: 85%;
+        }
+        100% {
+          height: 100%;
+        }
+      }
+      // .heart-fill:hover {
+      //   height: 100%;
+      // }
+
       // i::before {
       //   content: attr(far fa-heart);
       //   position: absolute;
