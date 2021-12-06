@@ -239,8 +239,8 @@ body .restaurant .rest-apercu__picture img {
   border-top-left-radius: 20px;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 body .restaurant .rest-apercu__desc {
   display: flex;
