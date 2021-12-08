@@ -226,7 +226,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 150%;
-    margin-left: 50px;
+    margin-left: 20px;
     padding-left: 40%;
     padding-right: 40%;
     font-size: 20px;
@@ -261,34 +261,54 @@ main {
   }
   @keyframes appear {
     0% {
-      margin-left: 50px;
+      margin-left: 20px;
     }
     25% {
-      margin-left: 40px;
+      margin-left: 15px;
     }
     50% {
-      margin-left: 30px;
+      margin-left: 10px;
     }
     75% {
-      margin-left: 20px;
+      margin-left: 5px;
     }
     100% {
       margin-left: 0px;
     }
   }
-  .bout-fonct__nbre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-style: solid;
-    font-size: $font-nbre-fonct;
-    border-radius: 50%;
-    height: 25px;
-    width: 25px;
-    color: white;
-    background-color: $primary-color;
-    border-color: $primary-color;
-    position: relative;
-    right: 15px;
+  i {
+    animation: appear2 1s normal linear forwards;
   }
+  @keyframes appear2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+.bout-fonct__nbre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  font-size: $font-nbre-fonct;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  color: white;
+  background-color: $primary-color;
+  border-color: $primary-color;
+  position: relative;
+  right: 15px;
 }
