@@ -91,7 +91,7 @@ a[href^=mailto] {
   border-style: none;
   height: 73px;
   background-color: white;
-  width: 100%;
+  width: 90%;
   box-shadow: 1px 1px 12px #555;
 }
 
@@ -232,15 +232,12 @@ body .restaurant .rest-apercu__picture .rest-apercu__sticker {
   font-weight: bold;
 }
 body .restaurant .rest-apercu__picture img {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   height: 100%;
   width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body .restaurant .rest-apercu__desc {
   display: flex;
@@ -279,8 +276,8 @@ body .restaurant .rest-apercu__desc .heart:hover .heart-fill {
   display: block;
   position: absolute;
   width: 24px;
-  -webkit-animation: progres 1s infinite linear;
-          animation: progres 1s infinite linear;
+  -webkit-animation: progres 1s normal linear;
+          animation: progres 1s normal linear;
   bottom: 0;
   left: 0;
 }
@@ -367,34 +364,141 @@ body .restaurant .rest-apercu__desc .container-rest {
 main {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  border-style: solid;
 }
 
 .bout-menu {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-content: center;
-  flex-wrap: wrap;
+  width: 100%;
+  border-style: none;
+  overflow: hidden;
+}
+.bout-menu .bout-menu__cont {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-style: none;
+  width: 80%;
 }
 .bout-menu .bout-menu__course {
-  width: 80%;
-  border-style: solid;
-  height: 40%;
+  border-style: none;
+  height: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .bout-menu .bout-menu__ingredient {
-  width: 80%;
-  border-style: solid;
-  height: 40%;
+  border-style: none;
+  height: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bout-menu .bout-menu__cont1 {
+  display: flex;
+  border-style: none;
+  width: 20%;
+  justify-content: stretch;
+  align-items: center;
 }
 .bout-menu .bout-menu__prix {
   height: 100%;
-  width: 20%;
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
-  border-style: solid;
+  border-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bout-menu .icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150%;
+  margin-left: 50px;
+  padding-left: 40%;
+  padding-right: 40%;
+  font-size: 20px;
+  background: #99e2d0;
+  color: white;
 }
 
-.bout-fonct__nbre {
+.bout-menu:hover .bout-menu__cont {
+  -webkit-animation: appear1 1s normal linear forwards;
+          animation: appear1 1s normal linear forwards;
+}
+@-webkit-keyframes appear1 {
+  0% {
+    width: 80%;
+  }
+  25% {
+    width: 75%;
+  }
+  50% {
+    width: 70%;
+  }
+  75% {
+    width: 65%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes appear1 {
+  0% {
+    width: 80%;
+  }
+  25% {
+    width: 75%;
+  }
+  50% {
+    width: 70%;
+  }
+  75% {
+    width: 65%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+.bout-menu:hover .icone {
+  -webkit-animation: appear 1s normal linear forwards;
+          animation: appear 1s normal linear forwards;
+}
+@-webkit-keyframes appear {
+  0% {
+    margin-left: 50px;
+  }
+  25% {
+    margin-left: 40px;
+  }
+  50% {
+    margin-left: 30px;
+  }
+  75% {
+    margin-left: 20px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes appear {
+  0% {
+    margin-left: 50px;
+  }
+  25% {
+    margin-left: 40px;
+  }
+  50% {
+    margin-left: 30px;
+  }
+  75% {
+    margin-left: 20px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+.bout-menu:hover .bout-fonct__nbre {
   display: flex;
   justify-content: center;
   align-items: center;
