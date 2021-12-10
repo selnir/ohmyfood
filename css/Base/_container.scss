@@ -2,7 +2,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
+.accueil {
   margin: 0;
   background-color: $background;
   font-family: $font-text;
@@ -156,26 +156,32 @@ body {
   margin-left: 20px;
   margin-right: 20px;
 }
-
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .menu-course {
-  padding: 20px;
+  width: 100%;
 }
 
-.bout-menu {
-  margin-bottom: 20px;
+.picure_header {
+  height: 375px;
+  width: 100%;
+  border-style: none;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
 
-.menu-course__titre {
-  margin-bottom: 20px;
-}
-.menu__titre {
-  margin-left: 20px;
-}
-main {
+.menu-page__main {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border-style: solid;
 }
+
 .bout-menu {
   display: flex;
   justify-content: start;
@@ -183,57 +189,97 @@ main {
   width: 100%;
   border-style: none;
   overflow: hidden;
+  opacity: 0;
+  animation: fadein 1s forwards;
+}
+.bout-menu:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bout-menu:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.bout-menu:nth-child(4) {
+  animation-delay: 0.6s;
+}
 
-  .bout-menu__cont {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border-style: none;
-    width: 80%;
-  }
-  .bout-menu__course {
-    border-style: none;
-    height: 50%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .bout-menu__ingredient {
-    border-style: none;
-    height: 50%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+@keyframes fadein {
+  0% {
+    transform: translate3d(0, 40px, 0);
   }
 
-  .bout-menu__cont1 {
-    display: flex;
-    border-style: none;
-    width: 20%;
-    justify-content: stretch;
-    align-items: center;
-  }
-  .bout-menu__prix {
-    height: 100%;
-    border-style: none;
-    padding-left: 20px;
-    padding-right: 20px;
+  60% {
+    opacity: 0;
+    transform: translate3d(0, 25px, 0);
   }
 
-  .icone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150%;
-    margin-left: 20px;
-    padding-left: 40%;
-    padding-right: 40%;
-    font-size: 20px;
-    background: #99e2d0;
-    color: white;
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
+
+.bout-menu__cont {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-style: none;
+  width: 80%;
+}
+.bout-menu__course {
+  text-align: start;
+  border-style: none;
+  height: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bout-menu__ingredient {
+  text-align: start;
+  border-style: solid;
+  height: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bout-menu__cont1 {
+  display: flex;
+  border-style: none;
+  width: 20%;
+  align-items: center;
+}
+.bout-menu__prix {
+  display: flex;
+  height: 100%;
+  border-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: flex-end;
+}
+
+.icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150%;
+  margin-left: 20%;
+  padding-left: 45%;
+  padding-right: 45%;
+  font-size: 20px;
+  background: #99e2d0;
+  color: white;
+}
+
 .bout-menu:hover {
   .bout-menu__cont {
     animation: appear1 1s normal linear forwards;
@@ -261,19 +307,19 @@ main {
   }
   @keyframes appear {
     0% {
-      margin-left: 20px;
+      margin-left: 20%;
     }
     25% {
-      margin-left: 15px;
+      margin-left: 15%;
     }
     50% {
-      margin-left: 10px;
+      margin-left: 10%;
     }
     75% {
-      margin-left: 5px;
+      margin-left: 5%;
     }
     100% {
-      margin-left: 0px;
+      margin-left: 0%;
     }
   }
   i {
@@ -297,6 +343,7 @@ main {
     }
   }
 }
+
 .bout-fonct__nbre {
   display: flex;
   justify-content: center;
