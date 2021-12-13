@@ -6,3 +6,21 @@ header {
   border: solid;
   width: 100%;
 }
+.logo {
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.menu-page__header {
+  display: flex;
+  align-items: center;
+  i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+  }
+}

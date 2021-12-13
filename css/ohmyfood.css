@@ -169,6 +169,26 @@ header {
   width: 100%;
 }
 
+.logo {
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-page__header {
+  display: flex;
+  align-items: center;
+}
+.menu-page__header i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -179,12 +199,6 @@ header {
   background-color: white;
   font-family: "roboto";
   border-style: none;
-}
-.accueil .logo {
-  height: 63px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .accueil .fonct-appli {
   padding-bottom: 74px;
@@ -346,59 +360,68 @@ header {
 }
 
 .menu {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  margin-bottom: 82px;
 }
 
 .menu-course {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .picure_header {
-  height: 375px;
   width: 100%;
+  height: 250px;
   border-style: none;
-  background-size: cover;
-  background-position: center center;
   background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.wrapper_over {
+  position: absolute;
+  top: 260px;
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: #f6f6f6;
 }
 
 .menu-page__main {
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-style: solid;
+  width: 100%;
 }
-
-.bout-menu {
+.menu-page__main .bout-menu {
   display: flex;
   justify-content: start;
   align-content: center;
-  width: 100%;
   border-style: none;
   overflow: hidden;
+  margin: 20px;
   opacity: 0;
   -webkit-animation: fadein 1s forwards;
           animation: fadein 1s forwards;
 }
-
-.bout-menu:nth-child(2) {
+.menu-page__main .bout-menu:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-
-.bout-menu:nth-child(3) {
+.menu-page__main .bout-menu:nth-child(3) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
-
-.bout-menu:nth-child(4) {
+.menu-page__main .bout-menu:nth-child(4) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
-
 @-webkit-keyframes fadein {
   0% {
     transform: translate3d(0, 40px, 0);
@@ -419,7 +442,6 @@ header {
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
-
 @keyframes fadein {
   0% {
     transform: translate3d(0, 40px, 0);
@@ -440,40 +462,40 @@ header {
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
-.bout-menu__cont {
+.menu-page__main .bout-menu__cont {
   display: flex;
   flex-direction: column;
   height: 100%;
   border-style: none;
   width: 80%;
+  padding-left: 10px;
 }
-
-.bout-menu__course {
+.menu-page__main .bout-menu__course {
   text-align: start;
   border-style: none;
   height: 50%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
 }
-
-.bout-menu__ingredient {
+.menu-page__main .bout-menu__ingredient {
   text-align: start;
-  border-style: solid;
   height: 50%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-top: 10px;
 }
-
-.bout-menu__cont1 {
+.menu-page__main .bout-menu__cont1 {
   display: flex;
   border-style: none;
   width: 20%;
   align-items: center;
 }
-
-.bout-menu__prix {
+.menu-page__main .bout-menu__prix {
+  padding-bottom: 10px;
   display: flex;
   height: 100%;
   border-style: none;
@@ -481,8 +503,7 @@ header {
   padding-right: 20px;
   align-items: flex-end;
 }
-
-.icone {
+.menu-page__main .icone {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -494,8 +515,7 @@ header {
   background: #99e2d0;
   color: white;
 }
-
-.bout-menu:hover .bout-menu__cont {
+.menu-page__main .bout-menu:hover .bout-menu__cont {
   -webkit-animation: appear1 1s normal linear forwards;
           animation: appear1 1s normal linear forwards;
 }
@@ -533,9 +553,9 @@ header {
     width: 60%;
   }
 }
-.bout-menu:hover .icone {
-  -webkit-animation: appear 1s normal linear forwards;
-          animation: appear 1s normal linear forwards;
+.menu-page__main .bout-menu:hover .icone {
+  -webkit-animation: appear 0.8s normal linear forwards;
+          animation: appear 0.8s normal linear forwards;
 }
 @-webkit-keyframes appear {
   0% {
@@ -571,9 +591,9 @@ header {
     margin-left: 0%;
   }
 }
-.bout-menu:hover i {
-  -webkit-animation: appear2 1s normal linear forwards;
-          animation: appear2 1s normal linear forwards;
+.menu-page__main .bout-menu:hover i {
+  -webkit-animation: appear2 0.8s normal linear forwards;
+          animation: appear2 0.8s normal linear forwards;
 }
 @-webkit-keyframes appear2 {
   0% {
@@ -609,8 +629,7 @@ header {
     transform: rotate(360deg);
   }
 }
-
-.bout-fonct__nbre {
+.menu-page__main .bout-fonct__nbre {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -624,4 +643,49 @@ header {
   border-color: #9356dc;
   position: relative;
   right: 15px;
+}
+.menu-page__main .menu__titre {
+  margin: 40px;
+}
+.menu-page__main .menu-course__titre {
+  width: 100%;
+  margin-left: 40px;
+}
+.menu-page__main .wrapper_titre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-page__main .heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23px;
+  width: 25px;
+  position: relative;
+}
+.menu-page__main .heart .heart-empty {
+  color: black;
+}
+.menu-page__main .heart .heart-fill {
+  display: none;
+  background-clip: text;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-page__main .heart:hover {
+  cursor: pointer;
+}
+.menu-page__main .heart:hover .heart-empty {
+  display: none;
+}
+.menu-page__main .heart:hover .heart-fill {
+  display: block;
+  position: absolute;
+  width: 24px;
+  -webkit-animation: progres 1s normal linear;
+          animation: progres 1s normal linear;
+  bottom: 0;
+  left: 0;
 }/*# sourceMappingURL=ohmyfood.css.map */
