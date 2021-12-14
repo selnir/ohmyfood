@@ -1,5 +1,9 @@
 .bout-val {
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  background: linear-gradient(
+    to bottom right,
+    rgb(255, 121, 218),
+    rgb(147, 86, 220)
+  );
   height: 50px;
   width: 220px;
   border-style: none;
@@ -9,6 +13,9 @@
   h3 {
     color: white;
   }
+}
+.bout-val:hover {
+  background: linear-gradient(to bottom right, rgb(229, 160, 210), #a588c9);
 }
 
 .bout-fonct {

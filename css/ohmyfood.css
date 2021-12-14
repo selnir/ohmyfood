@@ -52,6 +52,10 @@ a[href^=mailto] {
   color: white;
 }
 
+.bout-val:hover {
+  background: linear-gradient(to bottom right, #e5a0d2, #a588c9);
+}
+
 .bout-fonct {
   display: flex;
   justify-content: start;
@@ -181,7 +185,7 @@ header {
   display: flex;
   align-items: center;
 }
-.menu-page__header i {
+.menu-page__header a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,6 +203,196 @@ header {
   background-color: white;
   font-family: "roboto";
   border-style: none;
+}
+.accueil .bout-fonct__nbre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  font-size: 10px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  color: white;
+  background-color: #9356dc;
+  border-color: #9356dc;
+  position: relative;
+  right: 15px;
+}
+.accueil .wrapper {
+  opacity: 0;
+  -webkit-animation: loader 3s 0.5s linear forwards;
+          animation: loader 3s 0.5s linear forwards;
+}
+@-webkit-keyframes loader {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.accueil .loader {
+  width: 100%;
+  -webkit-animation: loader2 3s 1.5s linear forwards;
+          animation: loader2 3s 1.5s linear forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accueil #loading {
+  opacity: 1;
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #9356dc;
+  border-radius: 50%;
+  border-top-color: #ff79da;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+@-webkit-keyframes loader2 {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader2 {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
 .accueil .fonct-appli {
   padding-bottom: 74px;
@@ -376,7 +570,40 @@ header {
   align-items: center;
 }
 
-.picure_header {
+.picure_header1 {
+  width: 100%;
+  height: 250px;
+  border-style: none;
+  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.picure_header2 {
+  width: 100%;
+  height: 250px;
+  border-style: none;
+  background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.picure_header3 {
+  width: 100%;
+  height: 250px;
+  border-style: none;
+  background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.picure_header4 {
   width: 100%;
   height: 250px;
   border-style: none;
@@ -628,21 +855,6 @@ header {
   100% {
     transform: rotate(360deg);
   }
-}
-.menu-page__main .bout-fonct__nbre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-style: solid;
-  font-size: 10px;
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
-  color: white;
-  background-color: #9356dc;
-  border-color: #9356dc;
-  position: relative;
-  right: 15px;
 }
 .menu-page__main .menu__titre {
   margin: 40px;
