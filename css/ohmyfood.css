@@ -298,10 +298,10 @@ header {
 .accueil .loader {
   width: 100%;
   display: flex;
-  justify-content: center;
 }
 .accueil #loading {
-  top: 350px;
+  top: 24%;
+  left: 45%;
   position: absolute;
   display: inline-block;
   width: 50px;
