@@ -220,6 +220,7 @@ header {
   right: 15px;
 }
 .accueil .wrapper {
+  width: 100%;
   opacity: 0;
   -webkit-animation: loader 3s 0.5s linear forwards;
           animation: loader 3s 0.5s linear forwards;
@@ -296,14 +297,11 @@ header {
 }
 .accueil .loader {
   width: 100%;
-  -webkit-animation: loader2 3s 1.5s linear forwards;
-          animation: loader2 3s 1.5s linear forwards;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .accueil #loading {
-  opacity: 1;
+  top: 350px;
   position: absolute;
   display: inline-block;
   width: 50px;
@@ -311,8 +309,8 @@ header {
   border: 3px solid #9356dc;
   border-radius: 50%;
   border-top-color: #ff79da;
-  animation: spin 1s ease-in-out infinite;
-  -webkit-animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite, loader2 3s 1s ease-in-out forwards;
+          animation: spin 1s ease-in-out infinite, loader2 3s 1s ease-in-out forwards;
 }
 @-webkit-keyframes loader2 {
   0% {
@@ -384,14 +382,14 @@ header {
     opacity: 0;
   }
 }
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
 @-webkit-keyframes spin {
   to {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 .accueil .fonct-appli {

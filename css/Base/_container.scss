@@ -23,6 +23,7 @@
     right: 15px;
   }
   .wrapper {
+    width: 100%;
     opacity: 0;
     animation: loader 3s 0.5s linear forwards;
     @keyframes loader {
@@ -63,13 +64,11 @@
   }
   .loader {
     width: 100%;
-    animation: loader2 3s 1.5s linear forwards;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   #loading {
-    opacity: 1;
+    top: 350px;
     position: absolute;
     display: inline-block;
     width: 50px;
@@ -77,8 +76,7 @@
     border: 3px solid $primary-color;
     border-radius: 50%;
     border-top-color: $secondary-color;
-    animation: spin 1s ease-in-out infinite;
-    -webkit-animation: spin 1s ease-in-out infinite;
+    animation: spin 1s ease-in-out infinite, loader2 3s 1s ease-in-out forwards;
   }
   @keyframes loader2 {
     0% {
@@ -117,14 +115,10 @@
   }
   @keyframes spin {
     to {
-      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
     }
   }
-  @-webkit-keyframes spin {
-    to {
-      -webkit-transform: rotate(360deg);
-    }
-  }
+
   .fonct-appli {
     padding-bottom: 74px;
     padding-top: 54px;
@@ -549,43 +543,3 @@
     }
   }
 }
-// @keyframes spinner {
-//   0% {
-//     transform: translate3d(-50%, -50%, 0) rotate(0deg);
-//   }
-//   100% {
-//     transform: translate3d(-50%, -50%, 0) rotate(360deg);
-//   }
-// }
-// .spin {
-//   position: fixed;
-//   z-index: 9999;
-//   background: gray 50% 50% no-repeat;
-//   top: 0px;
-//   left: 0px;
-//   height: 100%;
-//   width: 100%;
-//   cursor: wait;
-//   animation: 1.5s linear infinite spinner;
-//   animation-play-state: inherit;
-//   border: solid 5px #cfd0d1;
-//   border-bottom-color: #1c87c9;
-//   border-radius: 50%;
-//   content: "";
-//   height: 40px;
-//   width: 40px;
-//   position: absolute;
-//   top: 10%;
-//   left: 10%;
-//   transform: translate3d(-50%, -50%, 0);
-//   will-change: transform;
-// }
-// .loader {
-//   width: 100%;
-//   height: 100%;
-//   border-style: solid;
-//   position: absolute;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
