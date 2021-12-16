@@ -39,3 +39,20 @@ a[href^="mailto"] {
   text-decoration: none;
   color: white;
 }
+.menu__titre {
+  font-family: $font-titre;
+  font-size: 21px;
+}
+.menu-course__titre {
+  font-family: $font-text;
+  font-weight: lighter;
+}
+.bout-menu__course {
+  font-family: $font-text;
+  font-size: 14px;
+}
+.bout-menu__ingredient {
+  font-family: $font-text;
+  font-weight: normal;
+  font-size: 11px;
+}

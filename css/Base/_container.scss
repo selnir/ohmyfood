@@ -383,6 +383,7 @@
     border-style: none;
     width: 80%;
     padding-left: 10px;
+    padding-top: 10px;
   }
   .bout-menu__course {
     text-align: start;
@@ -401,7 +402,6 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-top: 10px;
   }
 
   .bout-menu__cont1 {
@@ -497,14 +497,12 @@
     }
   }
 
-  .menu__titre {
-    margin: 40px;
-  }
   .menu-course__titre {
     width: 100%;
     margin-left: 40px;
   }
   .wrapper_titre {
+    height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -542,4 +540,7 @@
       left: 0;
     }
   }
+}
+.menu-course:nth-child(3) {
+  margin-bottom: 30px;
 }
