@@ -880,6 +880,10 @@ header {
   width: 100%;
   margin-left: 40px;
 }
+.menu-page__main .menu-course__titre hr {
+  width: 10%;
+  border: solid #99e2d0 1.5px;
+}
 .menu-page__main .wrapper_titre {
   height: 80px;
   display: flex;

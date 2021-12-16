@@ -500,6 +500,10 @@
   .menu-course__titre {
     width: 100%;
     margin-left: 40px;
+    hr {
+      width: 10%;
+      border: solid $tertiary-color 1.5px;
+    }
   }
   .wrapper_titre {
     height: 80px;
