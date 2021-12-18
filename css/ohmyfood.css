@@ -40,7 +40,7 @@ a[href^=mailto] {
   color: white;
 }
 
-.menu__titre {
+.menu-titre__h1 {
   font-family: "Shrikhand";
   font-size: 21px;
 }
@@ -194,7 +194,7 @@ header {
   width: 100%;
 }
 
-.logo {
+.header__logo {
   height: 63px;
   display: flex;
   justify-content: center;
@@ -202,11 +202,11 @@ header {
   width: 100%;
 }
 
-.menu-page__header {
+header {
   display: flex;
   align-items: center;
 }
-.menu-page__header a {
+header a {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -590,7 +590,7 @@ header {
   align-items: center;
 }
 
-.picure_header1 {
+.menu-picture1 {
   width: 100%;
   height: 250px;
   border-style: none;
@@ -601,7 +601,7 @@ header {
   position: relative;
 }
 
-.picure_header2 {
+.menu-picture2 {
   width: 100%;
   height: 250px;
   border-style: none;
@@ -612,7 +612,7 @@ header {
   position: relative;
 }
 
-.picure_header3 {
+.menu-picture3 {
   width: 100%;
   height: 250px;
   border-style: none;
@@ -623,7 +623,7 @@ header {
   position: relative;
 }
 
-.picure_header4 {
+.menu-picture4 {
   width: 100%;
   height: 250px;
   border-style: none;
@@ -643,10 +643,10 @@ header {
   background-color: #f6f6f6;
 }
 
-.menu-page__main {
+.menu-main {
   width: 100%;
 }
-.menu-page__main .bout-menu {
+.menu-main .bout-menu {
   display: flex;
   justify-content: start;
   align-content: center;
@@ -657,15 +657,15 @@ header {
   -webkit-animation: fadein 1s forwards;
           animation: fadein 1s forwards;
 }
-.menu-page__main .bout-menu:nth-child(2) {
+.menu-main .bout-menu:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-.menu-page__main .bout-menu:nth-child(3) {
+.menu-main .bout-menu:nth-child(3) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
-.menu-page__main .bout-menu:nth-child(4) {
+.menu-main .bout-menu:nth-child(4) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
@@ -709,7 +709,7 @@ header {
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 }
-.menu-page__main .bout-menu__cont {
+.menu-main .bout-menu__cont {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -718,7 +718,7 @@ header {
   padding-left: 10px;
   padding-top: 10px;
 }
-.menu-page__main .bout-menu__course {
+.menu-main .bout-menu__course {
   text-align: start;
   border-style: none;
   height: 50%;
@@ -728,20 +728,20 @@ header {
   display: flex;
   align-items: center;
 }
-.menu-page__main .bout-menu__ingredient {
+.menu-main .bout-menu__ingredient {
   text-align: start;
   height: 50%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu-page__main .bout-menu__cont1 {
+.menu-main .bout-menu__cont1 {
   display: flex;
   border-style: none;
   width: 20%;
   align-items: center;
 }
-.menu-page__main .bout-menu__prix {
+.menu-main .bout-menu__prix {
   padding-bottom: 10px;
   display: flex;
   height: 100%;
@@ -750,7 +750,7 @@ header {
   padding-right: 20px;
   align-items: flex-end;
 }
-.menu-page__main .icone {
+.menu-main .icone {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -762,7 +762,7 @@ header {
   background: #99e2d0;
   color: white;
 }
-.menu-page__main .bout-menu:hover .bout-menu__cont {
+.menu-main .bout-menu:hover .bout-menu__cont {
   -webkit-animation: appear1 1s normal linear forwards;
           animation: appear1 1s normal linear forwards;
 }
@@ -800,7 +800,7 @@ header {
     width: 60%;
   }
 }
-.menu-page__main .bout-menu:hover .icone {
+.menu-main .bout-menu:hover .icone {
   -webkit-animation: appear 0.8s normal linear forwards;
           animation: appear 0.8s normal linear forwards;
 }
@@ -838,7 +838,7 @@ header {
     margin-left: 0%;
   }
 }
-.menu-page__main .bout-menu:hover i {
+.menu-main .bout-menu:hover i {
   -webkit-animation: appear2 0.8s normal linear forwards;
           animation: appear2 0.8s normal linear forwards;
 }
@@ -876,21 +876,23 @@ header {
     transform: rotate(360deg);
   }
 }
-.menu-page__main .menu-course__titre {
+.menu-main .menu-course__h2 {
   width: 100%;
   margin-left: 40px;
 }
-.menu-page__main .menu-course__titre hr {
+.menu-main .menu-course__h2 hr {
   width: 10%;
   border: solid #99e2d0 1.5px;
 }
-.menu-page__main .wrapper_titre {
+.menu-main .menu-titre {
   height: 80px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  width: 100%;
+  border-style: solid;
 }
-.menu-page__main .heart {
+.menu-main .heart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -898,23 +900,23 @@ header {
   width: 25px;
   position: relative;
 }
-.menu-page__main .heart .heart-empty {
+.menu-main .heart .heart-empty {
   color: black;
 }
-.menu-page__main .heart .heart-fill {
+.menu-main .heart .heart-fill {
   display: none;
   background-clip: text;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu-page__main .heart:hover {
+.menu-main .heart:hover {
   cursor: pointer;
 }
-.menu-page__main .heart:hover .heart-empty {
+.menu-main .heart:hover .heart-empty {
   display: none;
 }
-.menu-page__main .heart:hover .heart-fill {
+.menu-main .heart:hover .heart-fill {
   display: block;
   position: absolute;
   width: 24px;

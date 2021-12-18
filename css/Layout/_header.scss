@@ -6,14 +6,14 @@ header {
   border: solid;
   width: 100%;
 }
-.logo {
+.header__logo {
   height: 63px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.menu-page__header {
+header {
   display: flex;
   align-items: center;
   a {
