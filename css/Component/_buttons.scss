@@ -176,6 +176,8 @@
 }
 
 .bout-menu:hover {
+  cursor: pointer;
+
   .bout-menu__cont {
     animation: appear1 1s normal linear forwards;
   }
