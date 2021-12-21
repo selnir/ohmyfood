@@ -1,0 +1,108 @@
+.rest-apercu {
+  display: flex;
+  height: 250px;
+  flex-direction: column;
+  border-radius: 25px;
+  margin: 20px;
+  box-shadow: 1px 1px 12px #555;
+  background-color: white;
+  box-shadow: 0px 1px 5px gray;
+}
+
+.rest-apercu__picture {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  .rest-apercu__sticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #99e2d0;
+    color: #008766;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    left: 70%;
+    top: 10%;
+    font-weight: bold;
+  }
+  img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.rest-apercu__desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  .heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23px;
+    width: 25px;
+    position: relative;
+
+    .heart-empty {
+      color: black;
+    }
+    .heart-fill {
+      display: none;
+      background-clip: text;
+      background: linear-gradient(to bottom right, #ff79da, #9356dc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .heart:hover {
+    cursor: pointer;
+    .heart-empty {
+      display: none;
+    }
+    .heart-fill {
+      display: block;
+      position: absolute;
+      width: 24px;
+      animation: progres 1s normal linear;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  @keyframes progres {
+    0% {
+      height: 0%;
+    }
+    25% {
+      height: 50%;
+    }
+    50% {
+      height: 75%;
+    }
+    75% {
+      height: 85%;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  .container-rest {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    justify-content: space-evenly;
+    margin-left: 15px;
+  }
+}
