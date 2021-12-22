@@ -5,6 +5,8 @@ h2 {
   font-size: $font-h2;
 }
 h3 {
+  font-family: $font-text;
+
   font-size: $font-h3;
 }
 p {
@@ -55,6 +57,10 @@ a[href^="mailto"] {
   font-family: $font-text;
   font-weight: normal;
   font-size: 11px;
+}
+.bout-menu__prix {
+  font-family: $font-text;
+  font-size: 14px;
 }
 .menu-course__h2 {
   font-family: $font-text;
