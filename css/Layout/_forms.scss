@@ -17,6 +17,8 @@ form {
   }
 
   input {
+    text-align: center;
+    height: 90%;
     background-color: $section-lieux;
     border-style: none;
     font-weight: bold;
@@ -35,6 +37,16 @@ form {
     i {
       font-size: $font-i-form;
       color: #6a6a6a;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    width: 100%;
+
+    p {
+      width: 100%;
+      border: solid;
     }
   }
 }

@@ -223,10 +223,32 @@
 
   .restaurant {
     background-color: $section-background;
-    padding-top: 64px;
     padding-bottom: 64px;
-    h1 {
-      margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    width: 100%;
+    a {
+      margin: 10px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .restaurant {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 20px;
+
+      h1 {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+      }
+      a {
+        width: 45%;
+        margin: 20px;
+      }
     }
   }
 
@@ -247,6 +269,13 @@
   .container-fonct {
     margin-left: 20px;
     margin-right: 20px;
+  }
+  @media (min-width: 1024px) {
+    .container-fonct {
+      flex-direction: row;
+      width: 100%;
+      margin: 0%;
+    }
   }
 }
 * {

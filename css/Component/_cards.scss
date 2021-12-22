@@ -3,12 +3,15 @@
   height: 250px;
   flex-direction: column;
   border-radius: 25px;
-  margin: 20px;
   box-shadow: 1px 1px 12px #555;
   background-color: white;
   box-shadow: 0px 1px 5px gray;
 }
-
+@media (min-width: 1024px) {
+  .rest-apercu {
+    width: 100%;
+  }
+}
 .rest-apercu__picture {
   position: relative;
   width: 100%;

@@ -110,6 +110,16 @@ a[href^=mailto] {
   width: 100%;
 }
 
+@media (min-width: 1024px) {
+  .bout-fonct {
+    width: 33%;
+    margin: 20px;
+  }
+  .bout-fonct h3 {
+    justify-content: center;
+    width: 50%;
+  }
+}
 .bout-fonct:hover {
   background: rgba(147, 86, 220, 0.3);
 }
@@ -404,6 +414,8 @@ form p {
   margin-bottom: 25px;
 }
 form input {
+  text-align: center;
+  height: 90%;
   background-color: #eaeaea;
   border-style: none;
   font-weight: bold;
@@ -424,6 +436,15 @@ form .explo-res__form i {
   color: #6a6a6a;
 }
 
+@media (min-width: 1024px) {
+  h1 {
+    width: 100%;
+  }
+  h1 p {
+    width: 100%;
+    border: solid;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -787,11 +808,31 @@ header a {
 }
 .accueil .restaurant {
   background-color: #f6f6f6;
-  padding-top: 64px;
   padding-bottom: 64px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
 }
-.accueil .restaurant h1 {
-  margin-left: 20px;
+.accueil .restaurant a {
+  margin: 10px;
+}
+@media (min-width: 1024px) {
+  .accueil .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .accueil .restaurant h1 {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .accueil .restaurant a {
+    width: 45%;
+    margin: 20px;
+  }
 }
 .accueil .container-fonct {
   display: flex;
@@ -810,6 +851,13 @@ header a {
   margin-left: 20px;
   margin-right: 20px;
 }
+@media (min-width: 1024px) {
+  .accueil .container-fonct {
+    flex-direction: row;
+    width: 100%;
+    margin: 0%;
+  }
+}
 
 * {
   margin: 0;
@@ -821,12 +869,16 @@ header a {
   height: 250px;
   flex-direction: column;
   border-radius: 25px;
-  margin: 20px;
   box-shadow: 1px 1px 12px #555;
   background-color: white;
   box-shadow: 0px 1px 5px gray;
 }
 
+@media (min-width: 1024px) {
+  .rest-apercu {
+    width: 100%;
+  }
+}
 .rest-apercu__picture {
   position: relative;
   width: 100%;

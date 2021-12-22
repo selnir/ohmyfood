@@ -45,6 +45,16 @@
     width: 100%;
   }
 }
+@media (min-width: 1024px) {
+  .bout-fonct {
+    width: 33%;
+    margin: 20px;
+    h3 {
+      justify-content: center;
+      width: 50%;
+    }
+  }
+}
 .bout-fonct:hover {
   background: rgba(147, 86, 220, 0.3);
   i {
