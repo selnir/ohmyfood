@@ -6,6 +6,11 @@
   align-items: center;
   margin-bottom: 30px;
 }
+@media (min-width: 1024px) {
+  .menu-course {
+    width: 33%;
+  }
+}
 .wrapper_over {
   position: absolute;
   top: 260px;
@@ -36,6 +41,9 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+  }
+  .menu-titre__h1 {
+    width: 60%;
   }
   .heart {
     display: flex;
@@ -69,6 +77,12 @@
       bottom: 0;
       left: 0;
     }
+  }
+}
+@media (min-width: 1024px) {
+  .menu-main {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .menu-picture1 {
