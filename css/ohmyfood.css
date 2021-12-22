@@ -503,7 +503,7 @@ header a {
 }
 
 .menu-course {
-  width: 100%;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -511,11 +511,6 @@ header a {
   margin-bottom: 30px;
 }
 
-@media (min-width: 1024px) {
-  .menu-course {
-    width: 33%;
-  }
-}
 .wrapper_over {
   position: absolute;
   top: 260px;
@@ -585,7 +580,7 @@ header a {
   left: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 400px) {
   .menu-main {
     flex-direction: row;
     flex-wrap: wrap;
