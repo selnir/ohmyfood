@@ -79,48 +79,23 @@
   .menu-main {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
-.menu-picture1 {
+.menu-picture {
   width: 100%;
   height: 250px;
   border-style: none;
-  background-image: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   position: relative;
+  object-fit: scale-down;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
-.menu-picture2 {
-  width: 100%;
-  height: 250px;
-  border-style: none;
-  background-image: url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-}
-.menu-picture3 {
-  width: 100%;
-  height: 250px;
-  border-style: none;
-  background-image: url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-}
-.menu-picture4 {
-  width: 100%;
-  height: 250px;
-  border-style: none;
-  background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-}
+
 .accueil {
   margin: 0;
   background-color: $background;
