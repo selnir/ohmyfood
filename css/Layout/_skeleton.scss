@@ -1,10 +1,10 @@
 .menu-course {
-  width: 350px;
+  width: $widht-menucourse;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: $margin-menucourse;
 }
 
 .wrapper_over {
